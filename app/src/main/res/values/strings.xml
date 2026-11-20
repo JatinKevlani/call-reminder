@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Call Reminder</string>
+    <string name="caller_name">Task Reminder</string>
+    <string name="tagline">I’ll ring you like a phone call when it’s time.</string>
+    <string name="empty_title">No reminders yet</string>
+    <string name="empty_hint">Tap “Add reminder” to set one up, like “Take medicine” every day at 10:00 AM.</string>
+    <string name="add_reminder">+  Add reminder</string>
+    <string name="setup_banner">Action needed: %1$s\nTap here to fix it.</string>
+    <string name="new_title">New reminder</string>
+    <string name="edit_title">Edit reminder</string>
+    <string name="close">Close</string>
+    <string name="label_task">Remind me to</string>
+    <string name="task_hint">e.g. Work on website redesign</string>
+    <string name="label_time">Call me at</string>
+    <string name="label_repeat">Repeat</string>
+    <string name="label_date">On</string>
+    <string name="repeat_once">Just once</string>
+    <string name="repeat_daily">Every day</string>
+    <string name="repeat_days">On certain days</string>
+    <string name="save">Save reminder</string>
+    <string name="test_call">Test call in 10 seconds</string>
+    <string name="delete">Delete reminder</string>
+    <string name="incoming">Incoming reminder call…</string>
+    <string name="answer">Answer</string>
+    <string name="decline">Decline</string>
+    <string name="say_again">Say again</string>
+    <string name="snooze">Snooze 10 min</string>
+    <string name="done">Done</string>
+</resources>

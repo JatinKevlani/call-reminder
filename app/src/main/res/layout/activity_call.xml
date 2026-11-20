@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/call_bg"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingStart="28dp"
+        android:paddingEnd="28dp">
+
+        <FrameLayout
+            android:layout_width="116dp"
+            android:layout_height="116dp"
+            android:background="@drawable/circle_avatar">
+
+            <ImageView
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:layout_gravity="center"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_alarm"
+                android:tint="#FFFFFF" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/caller_name"
+            android:textColor="#FFFFFF"
+            android:textSize="32sp" />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/incoming"
+            android:textColor="#B3FFFFFF"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/task"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:background="@drawable/call_card"
+            android:gravity="center"
+            android:lineSpacingExtra="4dp"
+            android:padding="20dp"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <!-- Shown while ringing -->
+    <LinearLayout
+        android:id="@+id/ringingControls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="64dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/decline"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:background="@drawable/circle_red"
+                android:contentDescription="@string/decline"
+                android:src="@drawable/ic_call_end"
+                android:tint="#FFFFFF" />
+
+            <TextView
+                style="@style/CallLabel"
+                android:text="@string/decline" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/answer"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:background="@drawable/circle_green"
+                android:contentDescription="@string/answer"
+                android:src="@drawable/ic_call"
+                android:tint="#FFFFFF" />
+
+            <TextView
+                style="@style/CallLabel"
+                android:text="@string/answer" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Shown after answering -->
+    <LinearLayout
+        android:id="@+id/callControls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="64dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/sayAgain"
+                android:layout_width="68dp"
+                android:layout_height="68dp"
+                android:background="@drawable/circle_glass"
+                android:contentDescription="@string/say_again"
+                android:src="@drawable/ic_replay"
+                android:tint="#FFFFFF" />
+
+            <TextView
+                style="@style/CallLabel"
+                android:text="@string/say_again" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/snooze"
+                android:layout_width="68dp"
+                android:layout_height="68dp"
+                android:background="@drawable/circle_glass"
+                android:contentDescription="@string/snooze"
+                android:src="@drawable/ic_snooze"
+                android:tint="#FFFFFF" />
+
+            <TextView
+                style="@style/CallLabel"
+                android:text="@string/snooze" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/done"
+                android:layout_width="68dp"
+                android:layout_height="68dp"
+                android:background="@drawable/circle_red"
+                android:contentDescription="@string/done"
+                android:src="@drawable/ic_call_end"
+                android:tint="#FFFFFF" />
+
+            <TextView
+                style="@style/CallLabel"
+                android:text="@string/done" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
